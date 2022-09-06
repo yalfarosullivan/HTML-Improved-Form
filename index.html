@@ -21,6 +21,8 @@
                 <label for age="age">Your Age</label>
                 <input type="number" name="age" id="age" min="21" max="120">
                 <h5>Must be age 21 or older to enter the contest.</h5>
+                <label for="password">Your Secret Code (must be 6 alphanumeric character)<span class="required-field">*</span></label>
+                <input type="password" id="password" pattern="[0-9a-zA-Z]{6}" title="6-Character Alphanumeric Pass Code" required>
             </div>
             <fieldset>
                 <legend>Your Contact Info</legend>
@@ -89,7 +91,7 @@
                         <option value="WY">Wyoming</option>
                     </datalist>
                     <label for="zip">Your Zipcode</label>
-                    <input type="number" id="zip" name="zip">
+                    <input type="text" id="zip" name="zip" pattern="[0-9]{5}" title="5-Digit US Zip Code">
                 </div>
             </fieldset>
 
